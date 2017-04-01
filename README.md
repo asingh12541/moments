@@ -1,2 +1,1 @@
-# moments
-Moments App - Android and IOS - Ionic
+# Moments App - android and IOS

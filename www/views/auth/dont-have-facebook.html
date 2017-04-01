@@ -1,0 +1,51 @@
+<ion-view class="welcome-view" cache-view="false">
+  <ion-nav-bar>
+    <ion-nav-back-button>
+    </ion-nav-back-button>
+  </ion-nav-bar>
+  <ion-content scroll="false">
+    <!-- <div multi-bg="['http://lorempixel.com/640/1136?1']" interval="3000" helper-class="no-facebook-welcome-bg"> -->
+    <!-- <div multi-bg="['http://i.giphy.com/tKX6FNU9UGwF2.gif']" interval="3000" helper-class="no-facebook-welcome-bg"> -->
+    <!-- <div multi-bg="['http://i.giphy.com/13f7pejozPXuta.gif']" interval="3000" helper-class="no-facebook-welcome-bg"> -->
+    <div multi-bg="['img/giphy.gif']" interval="3000" helper-class="no-facebook-welcome-bg">
+    <!-- <div multi-bg="['img/giphy-bg.gif']" interval="3000" helper-class="no-facebook-welcome-bg"> -->
+      <div class="top-content row">
+        <div class="app-copy col col-center">
+          <h1 class="app-logo"><img src="{{image}}"/></h1>
+          <p class="app-tagline">
+           Welcome {{user.name}}! <br><br>
+           Let ur moment be your story!
+
+           {{libraryImages[0]}}
+          </p>
+        </div>
+      </div>
+
+     <!-- <p class="other--options">Upload your Profile Pic</p> -->
+      <h1 class="other--options">Upload ur Selfie</h1>
+      <div class="bottom-content row" style="height: 19%;">
+
+
+
+        <div class="col col-bottom text-center">
+     
+          <a class="create-account icon ion-camera button-large button" ng-click="takePicture()">
+
+          </a>
+         
+          <a class="create-account icon ion-images button-large button" ng-click="selectPicture()">
+         
+          </a>
+
+    <!---  <p class="other--options">Or Use your profile Pic</p>
+
+          <a class="create-account button-large button button-block" ng-click="showMoments()">
+            Skip to continue  <i class="ion-chevron-right"></i>
+          </a> -->
+       
+         
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

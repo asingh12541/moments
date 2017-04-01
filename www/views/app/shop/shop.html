@@ -1,0 +1,26 @@
+<ion-view view-title="Moments" class="shop-view">
+ 
+ <div class="col col-center user-data">
+                <!-- We need a wrapper with width set for the preload image directive -->
+           
+
+<ion-floating-menu has-footer="true" backdrop="true">
+    <ion-floating-item icon="ion-android-upload" ng-click="inviteFriends()" text="Upload Photos">
+    </ion-floating-item>
+    <ion-floating-item icon="ion-person" ng-click="selectPicture()" text="Invite Friends"></ion-floating-item>
+</ion-floating-menu>
+
+
+  <ion-tabs class="tabs-icon-top tabs-striped tabs-background-balanced tabs-color-light shop-tabs">
+  
+  
+    <ion-tab title="My Photos" icon-on="ion-images" icon-off="ion-images" ui-sref="app.shop.sale">
+      <ion-nav-view name="shop-sale"></ion-nav-view>
+    </ion-tab>
+      <ion-tab title="Collections" icon-on="ion-ios-pricetags" icon-off="ion-ios-pricetags" ui-sref="app.shop.popular">
+      <ion-nav-view name="shop-popular"></ion-nav-view>
+    </ion-tab>
+  </ion-tabs>
+
+
+</ion-view>

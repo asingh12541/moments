@@ -1,0 +1,23 @@
+<ion-view view-title="Moments" class="shop-sale-view">
+  
+
+  <ion-content>
+
+
+
+   <ion-refresher pulling-text="Pull to refresh..." on-refresh="getNewData()">
+    </ion-refresher>
+
+
+
+    <div ng-repeat="post in posts">
+      <section ng-include="'views/app/partials/post-card.html'" class="post-card-outer"></section>
+    </div>
+
+    <!-- Infinit scroll -->
+    <ion-infinite-scroll ng-if="moreDataCanBeLoaded()" on-infinite="loadMoreData()" distance="2%">
+    </ion-infinite-scroll>
+
+
+  </ion-content>
+</ion-view>
